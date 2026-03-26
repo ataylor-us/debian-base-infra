@@ -1,0 +1,9 @@
+---
+- name: Create podman data directory
+  become: true
+  ansible.builtin.file:
+    group: root
+    mode: "0755"
+    owner: root
+    path: "{{ podman_data_dir }}"
+    state: directory

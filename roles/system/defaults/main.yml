@@ -1,0 +1,6 @@
+---
+packages:
+  - htop
+  - rsync
+enabled_services:
+  - ssh
