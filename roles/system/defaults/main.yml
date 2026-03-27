@@ -2,5 +2,6 @@
 packages:
   - htop
   - rsync
+  - curl
 enabled_services:
   - ssh
