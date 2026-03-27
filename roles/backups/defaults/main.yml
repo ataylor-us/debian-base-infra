@@ -4,3 +4,6 @@ packages:
   - borgmatic
   - lz4
   - sqlite3
+masked_services:
+  - borgmatic.service
+  - borgmatic.timer
