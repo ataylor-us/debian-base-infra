@@ -1,6 +1,7 @@
 ---
 packages:
   - msmtp
+  - msmtp-mta
   - s-nail
 enabled_services:
   - mailrise-container.service
