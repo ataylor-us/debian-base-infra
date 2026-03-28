@@ -3,6 +3,7 @@ packages:
   - msmtp
   - msmtp-mta
   - s-nail
+  - bsd-mailx
 enabled_services:
   - mailrise-container.service
 mailrise_domain: mailrise
