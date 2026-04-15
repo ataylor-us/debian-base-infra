@@ -5,7 +5,7 @@
     src: auto.master.j2
     dest: /etc/auto.master
     group: root
-    mode: "0644"
+    mode: "0600"
     owner: root
   notify: Restart autofs
 - name: Configure auto.misc
@@ -14,7 +14,7 @@
     src: auto.misc.j2
     dest: /etc/auto.misc
     group: root
-    mode: "0644"
+    mode: "0600"
     owner: root
   notify: Restart autofs
 - name: Flush handlers
