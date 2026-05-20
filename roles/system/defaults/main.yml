@@ -4,6 +4,8 @@ packages:
   - rsync
   - curl
   - smartmontools
+  - fail2ban
 enabled_services:
   - ssh
   - smartd
+  - fail2ban
