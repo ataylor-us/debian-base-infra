@@ -17,3 +17,4 @@ default_quadlet_options:
     WantedBy=default.target
 default_podman_interface: "podman1"
 timezone: "America/New_York"
+puppet_server: "{{ lookup('community.general.passwordstore', 'Repositories/debian-base-infra/puppet_server') }}"
