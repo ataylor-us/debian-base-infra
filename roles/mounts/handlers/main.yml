@@ -5,3 +5,8 @@
     state: restarted
   become: true
   loop: "{{ enabled_services }}"
+- name: Clear nfsidmap cache
+  become: true
+  ansible.builtin.command:
+    cmd: nfsidmap -c
+  changed_when: true
