@@ -1,6 +1,8 @@
-# Base Debian (Trixie) playbook
+# Base Debian playbook
 
 Base playbook to set up a Debian box
+
+Tested with Trixie, working on Ubuntu 26 support.
 
 ## Running
 
