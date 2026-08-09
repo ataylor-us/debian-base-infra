@@ -1,4 +1,7 @@
 ---
+# Ubuntu 26 workaround
+# I believe it uses sudo-rs, which breaks become on Ansible for me
+ansible_become_exe: "{{ '/usr/bin/sudo.ws' if ansible_distribution == 'Ubuntu' and ansible_distribution_major_version == '26' else 'sudo' }}"
 tailscale_authkey: "dummy"
 username: alex
 group: alex
