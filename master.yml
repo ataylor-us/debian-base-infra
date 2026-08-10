@@ -1,6 +1,13 @@
 ---
 - name: Set up debian box
   hosts: all
+  pre_tasks:
+    - name: Set ansible_become_exe for sudo-rs (Ubuntu) boxes
+      ansible.builtin.set_fact:
+        ansible_become_exe: /usr/bin/sudo.ws
+      when:
+        - ansible_facts['distribution'] == 'Ubuntu'
+        - ansible_facts['distribution_version'] is version('25.10', '>=')
   roles:
     - system
     - role: disks
