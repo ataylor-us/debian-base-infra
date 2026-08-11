@@ -44,6 +44,7 @@
     apply:
       become: true
 # TODO: clean this up, it works it needs to be refined
+# TODO: test this with debian, its only been tested with ubuntu 26
 - name: Configure dropbear for remote LUKS unlock
   when: "'encrypted_boot' in group_names"
   become: true
